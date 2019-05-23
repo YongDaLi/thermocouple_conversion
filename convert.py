@@ -56,9 +56,11 @@ def convert (ref_temp, measured_voltage):
     # check if values are within range of conversion
     if (ref_temp < min_temp or ref_temp > max_temp):
         adj_temp = "temperatue out of range: {" + str(min_temp) + ", " + str(max_temp) + "} °C"
+        return adj_temp
     
     elif (measured_voltage < min_voltage or measured_voltage > max_voltage):
         adj_temp =  "measured voltage out of range: {" + str(min_voltage) + ", " + str(max_voltage) + "} mV"
+        return adj_temp
 
     # index of closest integer temperature value
     t_index = closest_value(ref_temp, temp)
@@ -113,7 +115,7 @@ def convert_cli ():
 
 # driver for converting volt-->temp for a csv file
 def convert_csv():
-    print("\ncsv mode selected")
+    print("\ncsv mode selected\n")
 
     # include .csv in file name
     input_file = input("Enter name of input csv file: ")

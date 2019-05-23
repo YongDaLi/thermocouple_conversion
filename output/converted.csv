@@ -1,3 +1,9 @@
 ref_temp,measured_voltage,temp
 0.0,0.532,13.55
 23.0,0.32,30.85365853658537
+2343.0,0.03,"temperatue out of range: {-270.0, 400.0} °C"
+-2343.0,0.03,"temperatue out of range: {-270.0, 400.0} °C"
+-43.0,2343.0,"measured voltage out of range: {-6.258, 20.869} mV"
+34.0,-2343.0,"measured voltage out of range: {-6.258, 20.869} mV"
+34.0,45.0,"measured voltage out of range: {-6.258, 20.869} mV"
+34.0,5.3,149.17999999999998
