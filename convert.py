@@ -26,7 +26,7 @@ def read_file():
 
     # print("Finished reading file, processed " + str(line_count) + " lines");
     # print("temp:", temp)
-    # print("voltage:", voltage)s
+    # print("voltage:", voltage)
 
     return temp, voltage
 
